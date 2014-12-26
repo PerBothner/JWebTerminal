@@ -50,6 +50,9 @@ in the console output.
 The primary class is webterminal.WebTerminal, which is
 an abstract (overridable) control you embed in your JavaFX scenegraph.
 
+The license of this code is the same as OpenJDK, that is
+GPL 2 with the "Classpath exception".
+
 ## Building and running
 
 The prototype requires not only Java, but specifically JavaFX 2.x.
