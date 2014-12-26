@@ -1,9 +1,9 @@
 # JWebTerminal - a web-based console
 
-JWebTerminal implements a general-purpose interactive console:
-Users can type commands which gets sent to an application,
-which evaluates the command, and displays the results, typically
-in some kind of type-script format.
+JWebTerminal implements a general-purpose interactive console
+and terminal emulator: Users can type commands which gets sent
+to an application, which evaluates the command, and displays the
+results, typically in some kind of type-script format.
 
 There are two basic modes:
 - In line-editing mode each input line is an input field you
@@ -58,10 +58,12 @@ with newer releases of JDK 7.x; however, you may have to manually
 set the classpath to include jfxrt.jar.
 
 Build the library and sample applications with the Ant tool:
+
     $ ant
 
 The PtyConsole requires non-portable native code, so it is
 not built by default.  Build it with:
+
     $ ant all
 
 ## Sample Applications
@@ -83,6 +85,7 @@ a JavaScript read-eval-print-tool, do:
       -Drunmain.class="com.sun.tools.script.shell.Main" \
       -Drunmain.args="-l javascript"
 or:
+
     $ java -cp dist/WebTerminal.jar:${JAVA_HOME}/lib/tools.jar \
       webterminal.RunInConsole com.sun.tools.script.shell.Main -l javascript
 
@@ -96,8 +99,11 @@ run /bin/bash.  (It does work under Cygwin if you edit the
 commandWithArgs field.)
 
 You can start this using Ant:
+
     $ ant run
+
 or directly:
+
     $ java -cp dist/WebTerminal.jar:${JAVA_HOME}/lib/tools.jar \
       webterminal.ShellConsole
 
@@ -117,6 +123,7 @@ GNU/Linux Fedora 21; it may need some porting effort on older
 or non-Linux platforms, especially Windows.
 
 You can run this with Ant:
+
     $ ant run-pty
 
 This uses character mode.
