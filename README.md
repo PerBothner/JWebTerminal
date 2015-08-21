@@ -5,6 +5,12 @@ and terminal emulator: Users can type commands which gets sent
 to an application, which evaluates the command, and displays the
 results, typically in some kind of type-script format.
 
+The [DomTerm](https://github.com/PerBothner/DomTerm) project
+will supersede JWebTerminal.  While DomTerm currently (2015/8) is
+too unstable and buggy to be very useful, it has a better architecture,
+and (since the DomTerm core is written in JavaScript) it can
+be used in more contexts,
+
 There are two basic modes:
 - In line-editing mode each input line is an input field you
 edit locally (in the browser).  The finished line is sent to the
